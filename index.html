@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Эвакуатор в Сочи — срочный вызов эвакуатора | Николай +7 901 101-07-80</title>
-  <meta name="description" content="Эвакуатор в Сочи срочно. Быстрый выезд по Сочи, Адлеру, Хосте, Дагомысу, Лазаревскому. Междугородние перевозки по России, в Крым и Беларусь. Звоните: +7 901 101-07-80">
-  <meta name="keywords" content="эвакуатор сочи, эвакуатор срочно, вызвать эвакуатор сочи, эвакуатор адлер, эвакуатор хоста, эвакуатор дагомыс, эвакуатор лазаревское, перевозка автомобиля сочи, эвакуатор крым, эвакуатор беларусь">
+  <title>Эвакуатор в Сочи — от 1 000 ₽, круглосуточно | Николай +7 901 101-07-80</title>
+  <meta name="description" content="Эвакуатор в Сочи круглосуточно, от 1 000 ₽. Быстрый выезд по Сочи и Большому Сочи, междугородние перевозки по России, в Крым и Беларусь. Звоните: +7 901 101-07-80">
+  <meta name="keywords" content="эвакуатор сочи, эвакуатор срочно, эвакуатор от 1000, вызвать эвакуатор сочи, эвакуатор адлер, эвакуатор хоста, эвакуатор дагомыс, эвакуатор лазаревское, перевозка автомобиля сочи, эвакуатор крым, эвакуатор беларусь">
   <meta name="theme-color" content="#0b0d10">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="Эвакуатор в Сочи — срочный вызов эвакуатора | Николай">
+  <meta property="og:title" content="Эвакуатор в Сочи — от 1 000 ₽, круглосуточно | Николай">
   <meta property="og:description" content="Быстрый выезд по Сочи и окрестностям. Междугородние перевозки по России, в Крым и Беларусь. Связь напрямую с водителем.">
   <meta property="og:image" content="1.png">
   <meta property="og:url" content="">
@@ -24,13 +24,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- JSON-LD LocalBusiness (без юридических данных и адреса) + SEO улучшения -->
+  <!-- JSON-LD LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Эвакуатор Сочи",
     "telephone": "+7 901 101-07-80",
+    "priceRange": "от 1000",
+    "openingHours": "24/7",
     "areaServed": [
       "Сочи",
       "Адлер",
@@ -47,7 +49,7 @@
       "itemOffered": {
         "@type": "Service",
         "name": "Эвакуация автомобилей",
-        "description": "Эвакуация и перевозка автомобилей в Сочи, Большом Сочи, междугородние перевозки по России, в Крым и Беларусь."
+        "description": "Эвакуация и перевозка автомобилей в Сочи, Большом Сочи, междугородние перевозки по России, в Крым и Беларусь. Круглосуточно, от 1000 рублей."
       }
     }
   }
@@ -347,6 +349,15 @@
     .hero-buttons .btn {
       flex: 0 1 auto;
     }
+    .hero-price {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--accent);
+    }
 
     /* ===== SECTIONS ===== */
     .section {
@@ -453,6 +464,22 @@
       font-size: 12px;
       color: var(--text-muted);
       line-height: 1.4;
+    }
+    .service-price {
+      display: block;
+      margin-top: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    /* ===== COST BLOCK ===== */
+    .cost-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 20px;
+      text-align: center;
     }
 
     /* ===== GEOGRAPHY ===== */
@@ -590,6 +617,45 @@
     }
     .gallery-dot:hover {
       background: rgba(255, 255, 255, 0.7);
+    }
+
+    /* ===== ADVANTAGES ===== */
+    .adv-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .adv-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .adv-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+      transform: translateY(-2px);
+    }
+    .adv-card svg {
+      width: 20px;
+      height: 20px;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .adv-card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+    .adv-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.4;
     }
 
     /* ===== CONTACT ===== */
@@ -868,6 +934,9 @@
       .geo-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+      .adv-grid {
+        grid-template-columns: 1fr;
+      }
       .help-photo {
         max-width: 500px;
         margin: 0 auto;
@@ -970,22 +1039,22 @@
 
   <main id="main">
 
-    <!-- HERO (фото 1.png) -->
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-bg">
         <img src="1.png" alt="Эвакуатор в Сочи на дороге" loading="eager" fetchpriority="high">
       </div>
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <div class="hero-badge">Сочи • На связи по телефону</div>
+        <div class="hero-badge">Круглосуточно • от 1 000 ₽</div>
         <h1>Эвакуатор в Сочи</h1>
-        <p class="hero-subtitle">Быстрый выезд по Сочи и окрестностям. Междугородние перевозки по России, в Крым и Беларусь.</p>
+        <p class="hero-subtitle">Сочи и Большой Сочи • Межгород • Крым • Беларусь</p>
         <div class="hero-buttons">
           <a href="tel:+79011010780" class="btn btn-primary">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
             </svg>
-            Вызвать эвакуатор
+            Позвонить
           </a>
           <a href="https://wa.me/79011010780" target="_blank" rel="noopener" class="btn btn-outline">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
@@ -1000,10 +1069,11 @@
             MAX
           </a>
         </div>
+        <div class="hero-price">от 1 000 ₽</div>
       </div>
     </section>
 
-    <!-- ПОМОЖЕМ, КОГДА НУЖНО (фото 2.jpg справа) -->
+    <!-- ПОМОЖЕМ, КОГДА НУЖНО -->
     <section class="section">
       <div class="container">
         <h2 class="section-title reveal">Поможем, когда нужно</h2>
@@ -1062,6 +1132,7 @@
             </svg>
             <h3>Эвакуация автомобиля</h3>
             <p>Подача эвакуатора для неисправного или повреждённого автомобиля.</p>
+            <span class="service-price">от 1 000 ₽</span>
           </article>
           <article class="service-card reveal">
             <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1070,6 +1141,7 @@
             </svg>
             <h3>Перевозка автомобиля</h3>
             <p>Доставка автомобиля в нужное место — в пределах города или региона.</p>
+            <span class="service-price">Стоимость уточняется индивидуально</span>
           </article>
           <article class="service-card reveal">
             <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1077,6 +1149,7 @@
             </svg>
             <h3>После ДТП</h3>
             <p>Эвакуация автомобиля с места аварии, помощь с транспортировкой.</p>
+            <span class="service-price">Стоимость уточняется индивидуально</span>
           </article>
           <article class="service-card reveal">
             <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1085,6 +1158,7 @@
             </svg>
             <h3>Междугородняя перевозка</h3>
             <p>Перевозка автомобиля в другой город или регион России.</p>
+            <span class="service-price">Стоимость зависит от маршрута</span>
           </article>
           <article class="service-card reveal">
             <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1093,6 +1167,7 @@
             </svg>
             <h3>Перевозка в Крым</h3>
             <p>Доставка автомобиля в Крым по согласованному маршруту.</p>
+            <span class="service-price">Стоимость зависит от маршрута</span>
           </article>
           <article class="service-card reveal">
             <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1101,7 +1176,20 @@
             </svg>
             <h3>Перевозка в Беларусь</h3>
             <p>Междугородняя доставка автомобиля в Беларусь по договорённости.</p>
+            <span class="service-price">Стоимость зависит от маршрута</span>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- СТОИМОСТЬ -->
+    <section class="section">
+      <div class="container">
+        <div class="cost-card reveal">
+          <h2 class="section-title">Стоимость эвакуации</h2>
+          <p class="section-subtitle">Услуги эвакуатора — от 1 000 ₽.</p>
+          <p>Точная стоимость зависит от места нахождения автомобиля, расстояния и сложности перевозки. Уточнить стоимость можно по телефону или в мессенджере.</p>
+          <a href="tel:+79011010780" class="btn btn-primary" style="margin-top: 16px;">Узнать стоимость</a>
         </div>
       </div>
     </section>
@@ -1180,7 +1268,7 @@
       </div>
     </section>
 
-    <!-- ФОТОГАЛЕРЕЯ (включая фото 3.jpg) -->
+    <!-- ФОТОГАЛЕРЕЯ -->
     <section class="section">
       <div class="container">
         <h2 class="section-title reveal">Фотографии эвакуатора</h2>
@@ -1206,12 +1294,61 @@
       </div>
     </section>
 
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Почему обращаются</h2>
+        <p class="section-subtitle reveal">Прямое взаимодействие без лишних посредников.</p>
+        <div class="adv-grid">
+          <div class="adv-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+            <div>
+              <h3>24/7 Круглосуточная связь</h3>
+              <p>На связи в любое время суток — можно позвонить или написать.</p>
+            </div>
+          </div>
+          <div class="adv-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+            </svg>
+            <div>
+              <h3>от 1 000 ₽ Доступная стоимость</h3>
+              <p>Понятная минимальная цена на услуги эвакуатора.</p>
+            </div>
+          </div>
+          <div class="adv-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <div>
+              <h3>Сочи Основное направление работы</h3>
+              <p>Работаем в Сочи и Большом Сочи, знаем местные дороги.</p>
+            </div>
+          </div>
+          <div class="adv-card reveal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/>
+              <path d="M12 8v4m0 0h4"/>
+            </svg>
+            <div>
+              <h3>Межгород Перевозки по России, в Крым и Беларусь</h3>
+              <p>Доставляем автомобили по всей России, в Крым и Беларусь.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- КОНТАКТ -->
     <section class="section">
       <div class="container">
         <div class="contact-card reveal">
-          <h2>Нужен эвакуатор? Свяжитесь с Николаем.</h2>
-          <p class="contact-name">Водитель эвакуатора — Николай</p>
+          <h2>Нужен эвакуатор?</h2>
+          <p class="contact-name">Николай на связи круглосуточно. Позвоните или напишите, чтобы уточнить стоимость и возможность перевозки автомобиля.</p>
           <a href="tel:+79011010780" class="contact-phone">+7 901 101-07-80</a>
           <div class="contact-buttons">
             <a href="tel:+79011010780" class="btn btn-primary">
@@ -1237,7 +1374,7 @@
       </div>
     </section>
 
-    <!-- FAQ (сокращённый) -->
+    <!-- FAQ -->
     <section class="section">
       <div class="container">
         <h2 class="section-title reveal">Частые вопросы</h2>
